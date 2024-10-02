@@ -1,7 +1,8 @@
+import {kacsak} from "../adatok.js"
 export default class TermékModel{
     #lista = []
-    constructor(lista){
-        this.#lista = lista
+    constructor(){
+        this.#lista = kacsak
 
     }
 

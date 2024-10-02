@@ -1,3 +1,3 @@
-import TermékController from "./userController/TermékController.js";
+import TermékController from "./userController/TermekController.js";
 
 new TermékController()

@@ -1,4 +1,4 @@
-const kajak = [
+export const kacsak = [
   {
     nev: "Doktor Kacsa",
     leírás:

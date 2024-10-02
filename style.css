@@ -1,0 +1,83 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  header h1 {
+    margin: 0;
+  }
+  header a {
+    margin-right: 2rem;
+  }
+  section {
+  padding: 0;
+  margin: 0;
+}
+  .termekek {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+  }
+  
+  .kartya {
+    width: 150px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+  }
+  
+  .kartya img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+    border: 2px solid grey;
+  }
+
+  .kartya h1 {
+    font-size: 1.2rem;
+    min-height: 2rem; 
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  .kartya p {
+    font-size: 0.9rem;
+    min-height: 3rem; 
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  .kartya button {
+    margin-top: auto; 
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .kartya button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cart {
+    background-color: lightgray;
+    border-left: 1px solid black;
+    padding: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .cart,
+    .termekek {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
