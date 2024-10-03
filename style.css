@@ -72,6 +72,24 @@ header {
     border-left: 1px solid black;
     padding: 1rem;
   }
+  .cart img{
+    width: 50%;
+    max-width: 4rem;
+    height: 5rem;
+    object-fit: fill;
+  }
+  .kosarElem{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    font-size: .1rem;
+  }
+  .kosarElem button{
+    background-color: red;
+  }
   
   @media (max-width: 768px) {
     .cart,

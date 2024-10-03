@@ -6,6 +6,11 @@ export default class TermékKártya {
         this.#adat = adat;
         this.szuloElem = szuloElem;
         this.kartyaFormátum();
+        this.kosarba = $(".kosarba:last")
+        this.kosarba.on("click", ()=>{
+            const e = new CustomEvent("kosarbaTesz",{detail :this.#adat})
+            window.dispatchEvent(e)
+        })
     }
 
     kartyaFormátum() {
@@ -15,7 +20,7 @@ export default class TermékKártya {
                 <h1>${this.#adat.nev}</h1>
                 <p>${this.#adat.leírás}</p>
                 <h3>Ár: ${this.#adat.ár}.-Ft</h3>
-                <button>Kosárba</button>
+                <button class="kosarba">Kosárba</button>
             </div>
         `);
     }
