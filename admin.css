@@ -1,0 +1,15 @@
+nav li{
+    list-style-type: none;
+    
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.fa-solid{
+    color: rgb(37, 73, 183);
+    cursor: pointer;
+   
+}
+
