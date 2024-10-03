@@ -13,7 +13,9 @@ export default class TermékController{
     kosarbaHelyez(){
         $(window).on("kosarbaTesz", (event)=>{
             console.log(event.detail);
+
             const kosarElem = $(".cart")
+            $(".ures").empty()
             kosarElem.append(`<div class="kosarElem">
                 <img src="${event.detail.img}" alt="${event.detail.nev}">
                 <h2>${event.detail.nev}</h2>
