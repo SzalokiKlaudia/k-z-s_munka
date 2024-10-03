@@ -7,6 +7,7 @@ export default class Table{
         this.#lista = lista
         this.szuloElem = szuloElem
         //console.log(this.#lista,this.szuloElem)
+        this.szuloElem.empty()
         this.tablazatMegjelenit()
         this.sorok = $(".sorok")
         this.sorokMegjelenit()
@@ -39,7 +40,8 @@ export default class Table{
 
     sorokMegjelenit(){
 
-        this.#lista.forEach((elem) => {
+        this.#lista.forEach((elem,index) => {
+            elem.id = index
             new Row(elem,this.sorok)
 
 

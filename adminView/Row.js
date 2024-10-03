@@ -7,6 +7,8 @@ export default class Row{
         this.szuloElem = szuloElem
         //console.log(this.#listaElem,this.szuloElem)
         this.sorMegjelenit()
+        this.kosarElem = $(".fa-solid:last")
+        this.esemenyKezelo()
     }
 
     sorMegjelenit(){
@@ -25,6 +27,16 @@ export default class Row{
 
     }
 
+    esemenyKezelo(){
+        this.kosarElem.on("click",(event) => {
+            //console.log("klikk")
 
+            const e = new CustomEvent("torol",{detail:this.#listaElem})
+            window.dispatchEvent(e)
+        
+        })
 
+    }
+
+    
 }

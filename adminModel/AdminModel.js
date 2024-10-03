@@ -13,5 +13,10 @@ export default class AdminModel{
         return this.#lista
     }
 
+    listaTorol(elem){
+        this.#lista = this.#lista.filter(listaEelem => listaEelem.id !== elem )
+        return this.#lista
+    }
+
 
 }
