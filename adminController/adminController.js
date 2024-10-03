@@ -5,7 +5,6 @@ export default class AdminController{
     constructor(){
         this.adminModel = new AdminModel()
 
-
     }
 
 
